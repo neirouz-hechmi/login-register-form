@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    background-color: #fffefc;
+    display: flex;
+    padding: 4rem;
+    height: 100vh;
+}
+#img-container,
+#form-container {
+    flex: 1;
+}
+#img-container,
+#form-container,
+#form-container #title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#img-container #paragraph {
+    color: #49bbbd;
+}
+#img-container #paragraph h1 {
+    font-size: 3.7rem;
+}
+#img-container #paragraph p {
+    font-size: 2.5rem;
+}
+#form-container {
+    gap: 2rem;
+}
+#form-container #title {
+    gap: 1rem;
+}
+#form-container #title p {
+    font-size: 1.6rem;
+}
+#form-container #title #btns {
+    padding: 0.8rem;
+    border-radius: 3.3rem;
+    background-color: #49bbbd99;
+    display: flex;
+    gap: 1rem;
+}
+#form-container #title #btns button {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 3.3rem;
+    padding: 0.8rem 4rem;
+    background-color: transparent;
+}
+#form-container #title #btns button:active {
+    background-color: #49bbbd99;
+}
+#form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+}
+#form-container form p {
+    font-size: 1.6rem;
+    color: #5b5b5b;
+}
+#form-container form #input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#form-container form #input-container .input-fieled {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#form-container form #input-container .input-fieled label {
+    font-size: 1.6rem;
+}
+#form-container form #input-container .input-fieled input {
+    border: 1px solid #49bbbd;
+    border-radius: 4rem;
+    outline: none;
+    padding: 1.5rem 2.5rem;
+}
+#form-container form #input-container .input-fieled input::placeholder {
+    color: #acacac;
+    font-size: 1.5rem;
+}
+#form-container form #remember-forget {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+#form-container form #remember-forget #remember {
+    display: flex;
+    gap: 1rem;
+}
+#form-container form #remember-forget  a {
+    text-decoration: none;
+    color: black;
+}
+#form-container form button {
+    width: 60%;
+    padding: 1.8rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.6rem;
+    background-color: #274c5b;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+@media (min-width : 2000px) {
+    #img-container #paragraph h1 {
+        font-size: 7.4rem;
+    }
+    #img-container #paragraph p {
+        font-size: 5rem;
+    }
+    #form-container #title p {
+        font-size: 3.2rem;
+    }
+    #form-container #title #btns {
+        padding: 1.6rem;
+        border-radius: 3.3rem;
+        gap: 1.2rem;
+    }
+    #form-container #title #btns button {
+        font-size: 3.2rem;
+        padding: 1.4rem 7rem;
+    }
+    #form-container form {
+        gap: 3.5rem;
+    }
+    #form-container form #input-container {
+        gap: 4rem;
+    }
+    #form-container form #input-container .input-fieled {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #form-container form p,
+    #form-container form #input-container .input-fieled label {
+        font-size: 3.2rem;
+    }
+    #form-container form #input-container .input-fieled input {
+        border: 2px solid #49bbbd;
+        padding: 4rem 2.5rem;
+    }
+    #form-container form #input-container .input-fieled input::placeholder {
+        font-size: 3rem;
+    }
+    #form-container form #remember-forget {
+        font-size: 2.4rem;
+    }
+    #form-container form #remember-forget #remember {
+        gap: 1.2rem;
+    }
+    #form-container form button {
+        padding: 3.6rem 6rem;
+        font-size: 3.2rem;
+        margin-top: 4rem;
+    }
+}
+@media (max-width : 768px) {
+    #form-container form button {
+        width: 100%;
+    }
+}
+@media (max-width : 620px){
+    body {
+        padding: 1.5rem;
+    }
+    #img-container {
+        display: none;
+    }
+    #form-container #title #btns {
+        padding: 1rem;
+    }
+    #form-container #title #btns button {
+        padding: 1.2rem 4rem;
+    }
+    #form-container form {
+        width: 90%;
+    }
+}
+@media (max-width:425px) {
+    body {
+        padding: 1rem;
+    }
+    #form-container form p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    #form-container form button {
+        background-color: #49bbbd;
+    }
+}
